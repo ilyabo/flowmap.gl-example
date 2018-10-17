@@ -1,13 +1,16 @@
 This is an example app using the [Flowmap.gl library](https://github.com/teralytics/flowmap.gl). 
 The app was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-
 # Running
+First, clone the repository:
 
-First install dependencies:
+    git clone git@github.com:ilyabo/flowmap.gl-example.git
 
+Then install dependencies:
+
+    cd flowmap.gl-example/
     npm install 
 
-Then run:
+Finally, run:
   
     npm start
