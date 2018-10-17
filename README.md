@@ -3,6 +3,8 @@ The app was bootstrapped with [Create React App](https://github.com/facebook/cre
 
 [Try in action](http://ilyabo.github.io/flowmap.gl-example).
 
+[![](https://user-images.githubusercontent.com/351828/47097114-fd049800-d230-11e8-9e59-0e4602cac720.png)](http://ilyabo.github.io/flowmap.gl-example).
+
 # Running
 First, clone the repository:
 
