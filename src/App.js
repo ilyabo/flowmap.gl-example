@@ -52,9 +52,6 @@ export default class App extends Component {
 
   render() {
     const { locations, flows } = this.state
-    if (!locations || !flows) {
-      return null
-    }
     const layers = []
     if (locations && flows) {
       layers.push(
