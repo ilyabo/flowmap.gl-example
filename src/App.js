@@ -6,7 +6,7 @@ import geoViewport from '@mapbox/geo-viewport'
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MapboxAccessToken
 
-const getInitialViewport = () => {
+const getInitialViewState = () => {
   const bbox = [5.956453645364537, 45.818, 10.492, 47.808]
   const { center: [longitude, latitude], zoom } =
     geoViewport.viewport(
@@ -18,6 +18,8 @@ const getInitialViewport = () => {
     longitude,
     latitude,
     zoom,
+    bearing: 0,
+    pitch: 0,
   }
 }
 
@@ -74,7 +76,7 @@ export default class App extends Component {
 
     return (
       <DeckGL
-        initialViewState={getInitialViewport()}
+        initialViewState={getInitialViewState()}
         controller={true}
         layers={layers}
       >
