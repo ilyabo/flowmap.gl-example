@@ -23,3 +23,4 @@ Add `.env` file to the project root with a [Mapbox access token](https://www.map
 Finally, run:
 
     npm start
+

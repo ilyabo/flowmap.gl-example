@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
 import {StaticMap} from 'react-map-gl'
-import DeckGL from 'deck.gl'
-import FlowMapLayer from 'flowmap.gl'
+import { DeckGL } from 'deck.gl';
+import FlowMapLayer from '@flowmap.gl/core'
 import geoViewport from '@mapbox/geo-viewport'
+
+import './App.css'
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MapboxAccessToken
 
@@ -66,10 +68,6 @@ export default class App extends Component {
           getFlowOriginId: f => f.origin,
           getFlowDestId: f => f.dest,
           getFlowMagnitude: f => f.count,
-          showTotals: true,
-          showLocationAreas: true,
-          locationCircleSize: 3,
-          varyFlowColorByMagnitude: true,
         })
       )
     }
