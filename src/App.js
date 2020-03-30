@@ -45,11 +45,21 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    fetch('data/locations.json')
+    fetch('data/locations.json', {
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    })
       .then(response => response.json())
       .then(json => this.setState({ locations: json }))
 
-    fetch('data/flows.json')
+    fetch('data/flows.json', {
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    })
       .then(response => response.json())
       .then(json => this.setState({ flows: json }))
   }
