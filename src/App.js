@@ -27,7 +27,10 @@ const getInitialViewState = () => {
 
 const colors = {
   flows: {
-    max: '#137CBD',
+    scheme: [
+      // Teal scheme from https://carto.com/carto-colors/
+      '#d1eeea','#a8dbd9','#85c4c9','#68abb8','#4f90a6','#3b738f','#2a5674'
+    ],
   },
   locationAreas: {
     outline: 'rgba(92,112,128,0.5)',
@@ -45,11 +48,11 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    fetch('data/locations.json')
+    fetch(`${process.env.PUBLIC_URL}/data/locations.json`)
       .then(response => response.json())
       .then(json => this.setState({ locations: json }))
 
-    fetch('data/flows.json')
+    fetch(`${process.env.PUBLIC_URL}/data/flows.json`)
       .then(response => response.json())
       .then(json => this.setState({ flows: json }))
   }
