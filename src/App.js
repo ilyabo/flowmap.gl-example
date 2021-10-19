@@ -11,8 +11,6 @@ import './App.css'
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MapboxAccessToken
 
-npm start
-
 const getInitialViewState = () => {
   const bbox = [5.956453645364537, 45.818, 10.492, 47.808]
   const { center: [longitude, latitude], zoom } =
@@ -91,3 +89,5 @@ export default class App extends Component {
     )
   }
 }
+
+npm start

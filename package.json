@@ -1,6 +1,6 @@
 {
   "name": "flowmap.gl-example",
-  "homepage": "http://ilyabo.github.io/flowmap.gl-example",
+  "homepage": "http://jh-gis.github.io/flowmap.gl-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
