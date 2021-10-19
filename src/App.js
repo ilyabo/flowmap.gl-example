@@ -1,5 +1,6 @@
 cd flowmap.gl-example/
 npm install
+npm start
 
 import React, {Component} from 'react'
 import {StaticMap} from 'react-map-gl'
@@ -10,8 +11,6 @@ import geoViewport from '@mapbox/geo-viewport'
 import './App.css'
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MapboxAccessToken
-
-npm start
 
 const getInitialViewState = () => {
   const bbox = [5.956453645364537, 45.818, 10.492, 47.808]
