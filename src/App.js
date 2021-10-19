@@ -9,7 +9,7 @@ import geoViewport from '@mapbox/geo-viewport'
 
 import './App.css'
 
-const MAPBOX_TOKEN = process.env.REACT_APP_MapboxAccessToken=pk.eyJ1IjoiamgtZ2lzIiwiYSI6ImNrdXdyNGtlajZsY3gycG1uNDJ5YmtyNzYifQ.TMhCqiETo_zs6m3vZW1ddA
+const MAPBOX_TOKEN = process.env.REACT_APP_MapboxAccessToken
 
 const getInitialViewState = () => {
   const bbox = [5.956453645364537, 45.818, 10.492, 47.808]
