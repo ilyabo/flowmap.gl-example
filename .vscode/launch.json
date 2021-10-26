@@ -2,7 +2,7 @@
     "configurations": [
     {
         "name": "Attach",
-        "port": 9229,
+        "port": 53362,
         "request": "attach",
         "skipFiles": [
             "<node_internals>/**"
