@@ -1,4 +1,4 @@
-cd flowmap.gl-example2/
+cd jh-gis.github.io/flowmap.gl-example2/
 npm install
 npm start
 
