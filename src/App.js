@@ -1,6 +1,3 @@
-cd flowmap.gl-example2/
-
-npm start;
 
 import React, {Component} from 'react'
 import {StaticMap} from 'react-map-gl'
