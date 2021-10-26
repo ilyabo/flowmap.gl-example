@@ -1,6 +1,4 @@
-cd jh-gis.github.io/flowmap.gl-example2/
-npm install
-npm start
+cd flowmap.gl-example2/
 
 import React, {Component} from 'react'
 import {StaticMap} from 'react-map-gl'
@@ -85,7 +83,7 @@ export default class App extends Component {
         controller={true}
         layers={layers}
       >
-        <StaticMap mapboxApiAccessToken={pk.eyJ1IjoiamgtZ2lzIiwiYSI6ImNrdXdyNGtlajZsY3gycG1uNDJ5YmtyNzYifQ.TMhCqiETo_zs6m3vZW1ddA} />
+        <StaticMap mapboxApiAccessToken={MAPBOX_TOKEN} />
       </DeckGL>
     )
   }
