@@ -85,7 +85,7 @@ export default class App extends Component {
         controller={true}
         layers={layers}
       >
-        <StaticMap mapboxApiAccessToken={MAPBOX_TOKEN} />
+        <StaticMap mapboxApiAccessToken={pk.eyJ1IjoiamgtZ2lzIiwiYSI6ImNrdXdyNGtlajZsY3gycG1uNDJ5YmtyNzYifQ.TMhCqiETo_zs6m3vZW1ddA} />
       </DeckGL>
     )
   }
