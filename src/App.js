@@ -1,6 +1,7 @@
 cd flowmap.gl-example2/
 
 npm install @flowmap.gl/react
+npm start
 
 import React, {Component} from 'react'
 import {StaticMap} from 'react-map-gl'
