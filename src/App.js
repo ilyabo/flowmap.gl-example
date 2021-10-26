@@ -1,5 +1,7 @@
 cd flowmap.gl-example2/
 
+npm install @flowmap.gl/react
+
 import React, {Component} from 'react'
 import {StaticMap} from 'react-map-gl'
 import { DeckGL } from 'deck.gl';
