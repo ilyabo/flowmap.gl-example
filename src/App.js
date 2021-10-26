@@ -1,4 +1,4 @@
-cd flowmap.gl-example/
+cd flowmap.gl-example2/
 npm install
 npm start
 
