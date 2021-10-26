@@ -1,11 +1,17 @@
 {
     "configurations": [
     {
-        "name": "Launch Chrome",
+        "name": "Launch via NPM",
         "request": "launch",
-        "type": "pwa-chrome",
-        "url": "http://localhost:8080",
-        "webRoot": "${workspaceFolder}"
+        "runtimeArgs": [
+            "run-script",
+            "debug"
+        ],
+        "runtimeExecutable": "npm",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "type": "pwa-node"
     }
     ]
 }
