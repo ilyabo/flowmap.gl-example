@@ -3,7 +3,7 @@ The app was bootstrapped with [Create React App](https://github.com/facebook/cre
 
 [Try in action](https://jh-gis.github.io/flowmap.gl-example2/).
 
-[![](https://user-images.githubusercontent.com/351828/47097114-fd049800-d230-11e8-9e59-0e4602cac720.png)](http://jh-gis.github.io/flowmap.gl-example)
+[![](https://user-images.githubusercontent.com/351828/47097114-fd049800-d230-11e8-9e59-0e4602cac720.png)](http://jh-gis.github.io/flowmap.gl-example2)
 
 # Running
 First, clone the repository:
