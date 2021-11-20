@@ -9,7 +9,7 @@ import './App.css'
 const MAPBOX_TOKEN = process.env.REACT_APP_MapboxAccessToken
 
 const getInitialViewState = () => {
-  const bbox = [5.967, 45.15, 12.467, 52.883]
+  const bbox = [-109.06, 36.99, -102.04, 41.00]
   const { center: [longitude, latitude], zoom } =
     geoViewport.viewport(
       bbox,
