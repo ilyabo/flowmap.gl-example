@@ -1,6 +1,6 @@
 {
   "name": "flowmap.gl-example",
-  "homepage": "http://ilyabo.github.io/flowmap.gl-example",
+  "homepage": "https://jh-gis.github.io/flowmap.gl-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,18 +8,19 @@
     "@flowmap.gl/react": "^7.2.0",
     "@mapbox/geo-viewport": "^0.4.0",
     "deck.gl": "^8.1.1",
+    "flowmap.gl": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-map-gl": "^5.2.3",
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,6 +32,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.2.0",
+    "install-peers": "^1.0.3"
   }
 }

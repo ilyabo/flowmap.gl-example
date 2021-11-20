@@ -9,7 +9,7 @@ import './App.css'
 const MAPBOX_TOKEN = process.env.REACT_APP_MapboxAccessToken
 
 const getInitialViewState = () => {
-  const bbox = [5.956453645364537, 45.818, 10.492, 47.808]
+  const bbox = [-109.06, 36.99, -102.04, 41.00]
   const { center: [longitude, latitude], zoom } =
     geoViewport.viewport(
       bbox,
@@ -48,11 +48,11 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    fetch(`${process.env.PUBLIC_URL}/data/locations.json`)
+    fetch(`${process.env.PUBLIC_URL}/data/COLocations.geojson`)
       .then(response => response.json())
       .then(json => this.setState({ locations: json }))
 
-    fetch(`${process.env.PUBLIC_URL}/data/flows.json`)
+    fetch(`${process.env.PUBLIC_URL}/data/COFlows.json`)
       .then(response => response.json())
       .then(json => this.setState({ flows: json }))
   }
@@ -66,8 +66,8 @@ export default class App extends Component {
           colors,
           locations,
           flows,
-          getLocationId: l => l.properties.abbr,
-          getLocationCentroid: l => l.properties.centroid,
+          getLocationId: l => l.properties.GEOID,
+          getLocationCentroid: l => l.properties.Centroid,
           getFlowOriginId: f => f.origin,
           getFlowDestId: f => f.dest,
           getFlowMagnitude: f => f.count,
@@ -86,3 +86,4 @@ export default class App extends Component {
     )
   }
 }
+
