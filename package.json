@@ -8,6 +8,7 @@
     "@flowmap.gl/react": "^7.2.0",
     "@mapbox/geo-viewport": "^0.4.0",
     "deck.gl": "^8.1.1",
+    "flowmap.gl": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-map-gl": "^5.2.3",
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -31,6 +32,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "install-peers": "^1.0.3"
   }
 }
